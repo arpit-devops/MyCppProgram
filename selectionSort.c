@@ -3,13 +3,13 @@ int *selection(int [],int);
 
 void main()
 {
-        int arr[6];
+        int arr[6];        // we take array of 6 element
 
         printf("\n enter array\n");
         for(int i=0;i<6;i++)
                 scanf("%d",&arr[i]);
 
-    int *ptr=selection(arr,6);
+    int *ptr=selection(arr,6);                 // sorted array base address points to ptr
         printf("\n your array is \n");
         for(int i=0;i<6;i++)
         printf("  %d  ",ptr[i] );
@@ -32,7 +32,7 @@ int *selection(int arr[],int n)
                         }
                 }
 
-                tempvar=arr[i];
+                tempvar=arr[i];             // swapping done here
                 arr[i]=arr[min];
                 arr[min]=tempvar;
 
